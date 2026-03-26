@@ -1,0 +1,12 @@
+{"time":"2026/03/25 21:06:01","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":52},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:07:01","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":52},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:19:24","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":60},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:20:30","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":60},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:25:16","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":63},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:32:02","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":62},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:37:03","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":62},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:38:06","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":63},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:38:56","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":63},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:39:21","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":64},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:39:59","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":64},"msg":"logger セットアップ完了"}
+{"time":"2026/03/25 21:41:12","level":"INFO","source":{"function":"main.loggerSetup","file":"c:/Users/PC_User/OneDrive/デスクトップ/GO_project/go_study/goroutine/main.go","line":64},"msg":"logger セットアップ完了"}
