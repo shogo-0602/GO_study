@@ -11,7 +11,8 @@
 .github
 # Test binary, built with `go test -c`
 *.test
-
+.log
+error_handling/*.log
 # Code coverage profiles and other test artifacts
 *.out
 coverage.*
