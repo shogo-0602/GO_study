@@ -1,3 +1,3 @@
-module groutine
+module goroutine
 
 go 1.26.1
