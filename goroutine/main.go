@@ -126,7 +126,7 @@ func main() {
 	fmt.Println("条件分岐のゴルーチンが起動されました。")
 
 	fmt.Println("\n\nポインタとgoto文の例を実行します。")
-	pointerExample() // ポインタの例を実行する関数を呼び出し。
-	gotoExample()    // goto文の例を実行する関数を呼び出し。
+	gotoExample()                // goto文の例を実行する関数を呼び出し。
+	pointerExampleWithFunction() // ポインタを関数に渡す例を実行する関数を呼び出し。
 
 }
