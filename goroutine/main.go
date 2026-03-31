@@ -5,6 +5,7 @@ import (
 	"io"
 	"log/slog"
 	"os"
+	"sync"
 )
 
 /*
@@ -94,6 +95,7 @@ func conditionalBranch() {
 }
 
 func main() {
+	fmt.Println("メインゴルーチンが開始します。")
 	// logger.logging チャネルを処理するゴルーチンを起動。
 	// リスナーがないとチャネルへの送信がブロックされ、デッドロックが発生するため必須。
 	go loggerLoop()
@@ -128,5 +130,34 @@ func main() {
 	fmt.Println("\n\nポインタとgoto文の例を実行します。")
 	gotoExample()                // goto文の例を実行する関数を呼び出し。
 	pointerExampleWithFunction() // ポインタを関数に渡す例を実行する関数を呼び出し。
+	syncWaitGroupExample()       // sync.WaitGroupを使用して複数のゴルーチンの完了を待つ例を実行する関数を呼び出し。
+}
 
+func syncWaitGroupExample() {
+	fmt.Println("\nsync.WaitGroupを使用して複数のゴルーチンの完了を待つ例を実行します。")
+	// sync.WaitGroupを使用して、複数のゴルーチンの完了を待つ例。
+	wg := &sync.WaitGroup{} // sync.WaitGroupのインスタンスを作成。
+	ch := make(chan string)
+
+	// ワーカーゴルーチンを起動。
+	for i := 1; i <= 3; i++ {
+		wg.Add(1) // ワーカーゴルーチンの数だけWaitGroupにカウントを追加。
+		workerID := fmt.Sprintf("%d号機", i)
+		go func(id string) {
+			defer wg.Done() // 完了したらデクリメントするため、deferで呼び出し。
+			worker(id, ch)  // worker関数を呼び出して、チャネルにメッセージを送信。
+		}(workerID)
+	}
+
+	// すべてのワーカー完了後にチャネルを閉じる。
+	go func() {
+		wg.Wait() // すべてのワーカーゴルーチンの完了を待つ。
+		close(ch) // チャネルを閉じて、受信側に終了を通知。
+	}()
+
+	// チャネルから結果を受け取って表示。
+	for message := range ch {
+		fmt.Println(message)
+	}
+	fmt.Println("すべてのワーカーが完了しました。")
 }
